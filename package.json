@@ -1,0 +1,44 @@
+{
+  "name": "iamnoself",
+  "version": "0.1.0",
+  "description": "A digital art project which looks at identity and egolessness through the lens of social media.",
+  "main": "main.js",
+  "repository": "https://github.com/jrod-disco/iamnoself",
+  "author": "jrod-disco <jrod.disco@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.12.19",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
+    "eslint": "^6.8.0",
+    "gsap": "^3.2.5",
+    "prettier": "2.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.1.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-html2": "^1.0.0",
+    "rollup-plugin-livereload": "^1.1.0",
+    "rollup-plugin-scss": "^2.1.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "sass": "^1.26.3",
+    "tslib": "^2.0.0",
+    "typedoc": "^0.17.6",
+    "typedoc-plugin-markdown": "^2.2.17",
+    "typescript": "3.9.7"
+  },
+  "dependencies": {
+    "pixi.js": "5.2.0",
+    "twitter-api-ts": "^0.0.33"
+  },
+  "scripts": {
+    "start": "rollup -c -w --environment BUILD:dev",
+    "clean": "rimraf dist",
+    "build": "rimraf dist && rollup -c --environment BUILD:prod",
+    "docs": "rimraf docs && npx typedoc --excludeExternals --entryPoint 'main' --stripInternal --readme none"
+  }
+}

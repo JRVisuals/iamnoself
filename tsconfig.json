@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {},
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  }
+}

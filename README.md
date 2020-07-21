@@ -15,7 +15,7 @@ The technology is fairly simple. There is a separate, private, repo with a node.
 
 ## Roadmap
 
-- [] What's next?
+- [ ] What's next?
 
 ### Completed!
 
